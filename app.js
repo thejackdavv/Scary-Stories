@@ -60,7 +60,7 @@ function solve() {
     articleElement.appendChild(fullName);
     articleElement.appendChild(Age);
     articleElement.appendChild(StoryTitle);
-    articleelement.appendChild(StoryGenre);
+    articleElement.appendChild(StoryGenre);
     articleElement.appendChild(StoryText);
 
     liElement.appendChild(articleElement);

@@ -5,7 +5,7 @@ function solve() {
   let lastNameElement = document.getElementById("last-name");
   let ageElement = document.getElementById("age");
   let storyTitleElement = document.getElementById("story-title");
-  let storyGenreElement = document.getElementbyId("genre");
+  let storyGenreElement = document.getElementById("genre");
   let storyElement = document.getElementById("story");
   let publishBtnElement = document.getElementById("form-btn");
   let previewUlElement = document.getElementById("preview-list");

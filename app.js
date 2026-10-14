@@ -5,6 +5,7 @@ function solve() {
   let lastNameElement = document.getElementById("last-name");
   let ageElement = document.getElementById("age");
   let storyTitleElement = document.getElementById("story-title");
+  let storyGenreElement = document.getElementById("genre");
   let storyElement = document.getElementById("story");
   let publishBtnElement = document.getElementById("form-btn");
   let previewUlElement = document.getElementById("preview-list");
@@ -37,6 +38,9 @@ function solve() {
     let StoryTitle = document.createElement("p");
     StoryTitle.textContent = `Title: ${storyTitleElement.value}`;
 
+    let StoryGenre = document.createElement("p");
+    StoryGenre.textContent = `Genre: ${storyGenreElement.value}`;
+
     let StoryText = document.createElement("p");
     StoryText.textContent = `${storyElement.value}`;
 
@@ -56,6 +60,7 @@ function solve() {
     articleElement.appendChild(fullName);
     articleElement.appendChild(Age);
     articleElement.appendChild(StoryTitle);
+    articleElement.appendChild(StoryGenre);
     articleElement.appendChild(StoryText);
 
     liElement.appendChild(articleElement);
@@ -70,12 +75,14 @@ function solve() {
     let editLastName = lastNameElement.value;
     let editAge = ageElement.value;
     let editTitle = storyTitleElement.value;
+    let editGenre = storyGenreElement.value
     let editStory = storyElement.value;
 
     firstNameElement.value = "";
     lastNameElement.value = "";
     ageElement.value = "";
     storyTitleElement.value = "";
+    storyGenreElement.value = "Disturbing"
     storyElement.value = "";
 
     publishBtnElement.disabled = true;
@@ -98,6 +105,7 @@ function solve() {
       lastNameElement.value = editLastName;
       ageElement.value = editAge;
       storyTitleElement.value = editTitle;
+      storyGenreElement.value = editGenre
       storyElement.value = editStory;
 
       liElement.remove();
